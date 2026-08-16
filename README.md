@@ -16,8 +16,8 @@ The objective of this project is to build, evaluate, and deploy an end-to-end Ma
 * **Preprocessing:** Train-Test Split (80/20), Feature Scaling using `StandardScaler` for distance and gradient-based models.
 
 ### c. Github Repository Link
-* **GitHub Repository:** [Github](https://github.com/SashvatJain/ml-assignment-2)
-* **Live Streamlit Web App:** [Streamlit](https://2025ac05819-sashvatjain.streamlit.app/)
+* **GitHub Repository:** [https://github.com/SashvatJain/ml-assignment-2](https://github.com/SashvatJain/ml-assignment-2)
+* **Live Streamlit Web App:** [https://2025ac05819-sashvatjain.streamlit.app/](https://2025ac05819-sashvatjain.streamlit.app/)
 
 ### d. Models used:
 
