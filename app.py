@@ -4,7 +4,7 @@ import joblib
 
 st.set_page_config(
     page_title="ML Classification Dashboard",
-    page_icon="📊",
+    page_icon="logo.png",
     layout="wide"
 )
 
@@ -29,6 +29,7 @@ MODEL_DESCRIPTIONS = {
 st.markdown(
     """
     <style>
+    /* Layout */
     [data-testid="stHeader"] {
         background: none !important;
         border: none !important;
@@ -46,25 +47,19 @@ st.markdown(
     }
     [data-testid="stAppViewContainer"] {
         padding-top: 5.5rem;
-        background-color: #f0f2f6;
-    }
-    [data-testid="stMain"] {
-        background-color: #f0f2f6;
-    }
-    .stApp {
-        background-color: #f0f2f6;
     }
     [data-testid="stMainBlockContainer"] {
         padding: 0 1.5rem 6rem;
-        background-color: transparent;
         max-width: none !important;
     }
+
+    /* Expander cards */
     [data-testid="stExpander"] {
-        background-color: #ffffff;
         border-radius: 12px;
-        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
-        border: 1px solid rgba(49, 51, 63, 0.1);
+        border: 1px solid rgba(128, 128, 128, 0.15);
     }
+
+    /* Banner */
     .top-banner {
         position: fixed;
         top: 0;
@@ -72,28 +67,39 @@ st.markdown(
         right: 0;
         z-index: 998;
         padding: 0.7rem 8rem 0.75rem 2.8rem;
-        background: #ffffff;
-        border-bottom: 1px solid rgba(49, 51, 63, 0.1);
+        border-bottom: 1px solid rgba(128, 128, 128, 0.15);
         backdrop-filter: blur(10px);
     }
     .top-banner .top-title {
         margin: 0;
         font-size: 1.25rem;
-        color: #132238;
         font-weight: 700;
         line-height: 1.25;
         white-space: nowrap;
     }
     .top-banner p {
         margin: 0.2rem 0 0;
-        color: #415266;
+        opacity: 0.7;
         font-size: 0.85rem;
         line-height: 1.4;
     }
+
+    /* Toolbar z-index */
     [data-testid="stToolbar"] [data-testid="stToolbarActions"],
     [data-testid="stAppDeployButton"],
     [data-testid="stMainMenu"] {
         z-index: 1001;
+    }
+
+    /* Metrics subtle bg */
+    [data-testid="stMetric"] {
+        border-radius: 8px;
+        padding: 0.6rem 0.8rem;
+    }
+
+    /* Disabled buttons */
+    button:disabled {
+        opacity: 0.4 !important;
     }
     </style>
     <div class="top-banner">
