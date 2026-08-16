@@ -1,6 +1,6 @@
 # Machine Learning Assignment 2 - Classification Models & Streamlit Deployment
 
-**Course:** M.Tech (AIML / DSE) - Machine Learning  
+**Course:** M.Tech (AIML) - Machine Learning  
 **Institution:** BITS Pilani (Work Integrated Learning Programmes Division)  
 
 ---
@@ -16,8 +16,8 @@ The objective of this project is to build, evaluate, and deploy an end-to-end Ma
 * **Preprocessing:** Train-Test Split (80/20), Feature Scaling using `StandardScaler` for distance and gradient-based models.
 
 ### c. Github Repository Link
-* **GitHub Repository:** `[INSERT_YOUR_GITHUB_LINK_HERE]`
-* **Live Streamlit Web App:** `[INSERT_YOUR_STREAMLIT_APP_LINK_HERE]`
+* **GitHub Repository:** `[Github](https://github.com/SashvatJain/ml-assignment-2)`
+* **Live Streamlit Web App:** `[Streamlit](https://2025ac05819-sashvatjain.streamlit.app/)`
 
 ### d. Models used:
 
