@@ -280,6 +280,23 @@ if st.session_state.get("evaluated"):
                                 st.session_state["pred_page"] = min(pred_pages, pred_page + 1)
                                 st.rerun()
 
+                # Evaluation Matrix
+                with st.container(border=True):
+                    st.markdown("#### Evaluation Metrics")
+                    eval_matrix = pd.DataFrame({
+                        "Metric": ["Accuracy", "Precision", "Recall", "F1 Score", "ROC-AUC", "MCC"],
+                        "Value": [f"{acc:.4f}", f"{prec:.4f}", f"{rec:.4f}", f"{f1:.4f}", f"{auc:.4f}", f"{mcc:.4f}"],
+                        "Description": [
+                            "Overall correctness of predictions",
+                            "True Positives / (True Positives + False Positives)",
+                            "True Positives / (True Positives + False Negatives)",
+                            "Harmonic mean of Precision and Recall",
+                            "Area Under ROC Curve (model discrimination)",
+                            "Matthews Correlation Coefficient (correlation measure)"
+                        ]
+                    })
+                    st.dataframe(eval_matrix, use_container_width=True, hide_index=True)
+
                 # Classification Report
                 with st.container(border=True):
                     st.markdown("#### Classification Report")
